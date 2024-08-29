@@ -1,0 +1,80 @@
+/* Parent container styling */
+.fetchAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+}
+
+.fetchAll-contianer {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Add a shadow for depth */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow-x: auto; /* Allow horizontal scroll if content overflows */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #ffffff; /* White text color */
+}
+
+/* Table header styling */
+thead {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque header background */
+}
+
+th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff; /* White text color */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border for separation */
+}
+
+/* Table body styling */
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly opaque background for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Slightly opaque background for even rows */
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for separation */
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Darken background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+
+    .fetchAll-contianer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

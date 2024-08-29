@@ -1,0 +1,90 @@
+/* Admin Home Section Styling */
+.admin-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+    color: #ffffff; /* White text color */
+  }
+  
+  .admin-home marquee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* White text for marquee */
+    margin-bottom: 20px;
+  }
+  
+  #profile-tag {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-contianer {
+    width: 150px; /* Set width of the profile container */
+    height: 150px; /* Set height of the profile container */
+    border-radius: 50%; /* Make the container circular */
+    background-image: url('C:/bank_management_system/src/assets/Austin-Jose.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin: 0 auto 20px; /* Center the profile container and add margin below */
+  }
+  
+  #profile-tag h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Text shadow for better readability */
+    color: #ffffff; /* Ensure text is white */
+  }
+  
+  #profile-tag h1 span {
+    color: #ffd700; /* Gold color for emphasis */
+  }
+  
+  #profile-tag h4 {
+    font-size: 18px;
+    margin: 5px 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Text shadow for better readability */
+    color: #ffffff; /* White color for consistency */
+  }
+  
+  #detials {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Add a shadow for depth */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .profile-contianer {
+      width: 120px; /* Adjust the size for smaller screens */
+      height: 120px;
+    }
+  
+    #profile-tag h1 {
+      font-size: 24px;
+    }
+  
+    #profile-tag h4 {
+      font-size: 16px;
+    }
+  
+    #detials {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  

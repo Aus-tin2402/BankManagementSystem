@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#main>button{
+    background-color: #ff6b6b; /* Bright red background color for the button */
+    color: #fff; /* White text color */
+    padding: 12px 25px; /* Padding inside the button */
+    font-size: 18px; /* Larger font size for the button text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for hover effect */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#main>button:hover{
+    background-color: #ff4757;
+    transform: scale(1.06);
+}   

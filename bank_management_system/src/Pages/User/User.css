@@ -1,0 +1,163 @@
+/* Parent Container Styling */
+#user-signup, #user-login,#user-forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide scrollbar for the parent container */
+}
+
+/* User Container with Elegant Glassmorphism */
+.user-container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px; /* Adjusted padding for better fit */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  overflow: hidden; /* Hide scrollbar for the container */
+  max-height: calc(100vh - 40px); /* Adjust height to fit within viewport */
+  box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+/* Enable scrolling on the content, but hide the scrollbar */
+.user-container {
+  position: relative;
+}
+
+.user-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px; /* Adjust width as needed */
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.user-container {
+  padding-right: 10px; /* Prevent content from being hidden behind scrollbar */
+  overflow-y: scroll; /* Enable scrolling */
+}
+
+/* Hide scrollbars */
+.user-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+.user-container {
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Header Styling with a Subtle Glow */
+.user-container h1 {
+  font-size: 28px; /* Adjusted font size for better fit */
+  margin-bottom: 20px; /* Adjusted margin */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Input Group with Soft Transitions */
+#user-input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#user-input-group label {
+  width: 50%;
+  font-size: 16px; /* Adjusted font size for better fit */
+  margin-bottom: 8px; /* Adjusted margin */
+  color: #f8f8f8;
+  font-weight: bold;
+  display:flex ;
+  align-items: center;
+  justify-content: start;
+}
+
+#user-input-group input {
+  width: 100%;
+  max-width: 100%; /* Prevents input from exceeding container */
+  padding: 12px;
+  font-size: 14px; /* Adjusted font size for better fit */
+  border-radius: 8px; /* Rounded corners */
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+#user-input-group input::placeholder {
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+#user-input-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+/* Button Styling with Elegant Hover Effect */
+#user-input-button {
+  text-align: center;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+#user-input-button button {
+  padding: 12px 24px; /* Adjusted padding for better fit */
+  font-size: 16px; /* Adjusted font size */
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #ff6b6b, #ff4757);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#user-input-button button:hover {
+  transform: translateY(-3px) scale(1.03); /* Adjusted hover effect */
+  background: linear-gradient(45deg, #ff4757, #ff6b6b);
+}
+
+/* Link Styling with Smooth Transition */
+
+
+.signup, .change-password{
+  text-align: center;
+  margin: 20px 0px;
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .user-container {
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .user-container h1 {
+    font-size: 24px; /* Adjusted font size */
+  }
+
+  .user-input-button button {
+    font-size: 14px; /* Adjusted font size */
+    padding: 10px 20px; /* Adjusted padding */
+  }
+}
